@@ -7,7 +7,7 @@ services:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - POSTGRES_DB=postgres
-    restart: always             # run as a service
+    #restart: always             # run as a service
     volumes:
         - ./postgresql:/var/lib/postgresql/data
 
@@ -32,4 +32,4 @@ services:
       # - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
-    restart: always             # run as a service
+    #restart: always             # run as a service
